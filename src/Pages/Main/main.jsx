@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Navbar } from "./../../Components/Navbar";
+import { AboutMe } from "./../../Components/AboutMe";
 
 const Container = styled.div`
   margin: 0;
@@ -7,7 +8,8 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
 `;
 
@@ -15,6 +17,7 @@ export const Main = () => {
   return (
     <Container>
       <Navbar />
+      <AboutMe />
     </Container>
   );
 };

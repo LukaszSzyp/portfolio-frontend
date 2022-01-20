@@ -35,6 +35,7 @@ export const Navbar = () => {
       <Logo>JUNIOR FRONTEND</Logo>
       <Wrapper>
         <Button>ABOUT ME</Button>
+        <Button>SKILLS</Button>
         <Button>EXPERIENCE</Button>
       </Wrapper>
     </Container>

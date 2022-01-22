@@ -19,11 +19,10 @@ const Title = styled.h3`
   letter-spacing: 2px;
 `;
 const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  height: 60%;
-  justify-content: space-between;
-  margin-left: 10%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: 60px;
 `;
 
 export const Skills = () => {

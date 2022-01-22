@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Navbar } from "./../../Components/Navbar";
 import { AboutMe } from "./../../Components/AboutMe";
 import { Skills } from "./../../Components/Skills";
+import { Experience } from "./../../Components/Experience";
 
 const Container = styled.div`
   margin: 0;
@@ -19,6 +20,7 @@ export const Main = () => {
     <Container>
       <Navbar />
       <AboutMe />
+      <Experience />
       <Skills />
     </Container>
   );

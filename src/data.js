@@ -16,7 +16,7 @@ export const skills = [
   {
     name: "CSS",
     img: css,
-    level: 2,
+    level: 3,
   },
   {
     name: "JavaScript",
@@ -47,5 +47,36 @@ export const skills = [
     name: "TypeScript",
     img: ts,
     level: 3,
+  },
+];
+
+export const experience = [
+  {
+    name: "hangman game",
+    dsc: "My first app in vanilla js ",
+    img: "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    video: "",
+    url: "https://unsplash.com/s/photos/game",
+  },
+  {
+    name: "hangman game",
+    dsc: "My first app in vanilla js ",
+    img: "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    video: "",
+    url: "https://unsplash.com/s/photos/game",
+  },
+  {
+    name: "hangman game",
+    dsc: "My first app in vanilla js ",
+    img: "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    video: "",
+    url: "https://unsplash.com/s/photos/game",
+  },
+  {
+    name: "hangman game",
+    dsc: "My first app in vanilla js ",
+    img: "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    video: "",
+    url: "https://unsplash.com/s/photos/game",
   },
 ];

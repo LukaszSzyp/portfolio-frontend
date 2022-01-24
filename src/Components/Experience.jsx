@@ -4,10 +4,9 @@ import { ExpTile } from "./ExpTile";
 
 const Container = styled.div`
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
-  width: 100%;
   flex-direction: column;
-  height: auto;
   background-color: #000;
 `;
 
@@ -20,8 +19,10 @@ const Title = styled.h3`
 `;
 
 const Wrapper = styled.div`
+  height: auto;
   display: grid;
-  gap: 1rem;
+  column-gap: 10px;
+  row-gap: 10vh;
   grid-template-columns: 1fr 50px 1fr;
   grid-template-rows: repeat(5, 10vh);
 `;
@@ -29,7 +30,7 @@ const Wrapper = styled.div`
 const Spot = styled.div`
   width: 20px;
   height: 20px;
-  background-color: #005b60;
+  background-color: #5b63b7;
   border-radius: 50%;
   justify-self: center;
   grid-column: 2/3;
@@ -50,7 +51,6 @@ export const Experience = () => {
                 name={element.name}
                 dsc={element.dsc}
                 img={element.img}
-                video={element.video}
                 url={element.url}
               />,
             ];

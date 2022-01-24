@@ -7,7 +7,7 @@ const Container = styled.div`
   align-items: center;
   color: #fff;
   width: 70vw;
-  height: 90vh;
+  height: 100vh;
 `;
 const Img = styled.img`
   width: 30rem;

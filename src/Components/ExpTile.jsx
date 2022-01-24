@@ -12,10 +12,18 @@ const Container = styled.div`
 
 const Img = styled.img`
   width: 40%;
-  height: 18vh;
+  height: 20vh;
   border-radius: 15px;
+  opacity: 0.6;
+  transition: opacity 0.5s, transform 0.5s;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.7, 1.7);
+    z-index: 2;
+  }
 `;
 const Wrapper = styled.div`
+  position: relative;
   width: 50%;
   padding: 10px;
   display: flex;
@@ -37,7 +45,23 @@ const Dsc = styled.p`
   margin-top: 10px;
 `;
 
-export const ExpTile = ({ index, name, dsc, img, video, url }) => {
+const Button = styled.button`
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: solid 1px #303030;
+  border-radius: 5px;
+  background-color: #5e5e5e;
+  color: #c6c6c6;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 60px;
+  &:hover {
+    background-color: #005b60;
+    cursor: pointer;
+  }
+`;
+
+export const ExpTile = ({ index, name, dsc, img, url }) => {
   return (
     <Container index={index}>
       {index % 2 === 0
@@ -45,14 +69,16 @@ export const ExpTile = ({ index, name, dsc, img, video, url }) => {
             <Wrapper>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
+              <Button>more</Button>
             </Wrapper>,
             <Img src={img} />,
           ]
         : [
             <Img src={img} />,
-            <Wrapper>
+            <Wrapper style={{ alignItems: "flex-end" }}>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
+              <Button>more</Button>
             </Wrapper>,
           ]}
       {}

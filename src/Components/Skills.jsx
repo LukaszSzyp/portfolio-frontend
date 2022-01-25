@@ -31,7 +31,7 @@ export const Skills = () => {
       <Title>SKILLS</Title>
       <Wrapper>
         {skills.map((skill) => (
-          <Skill skill={skill} />
+          <Skill skill={skill} key={skill.name} />
         ))}
       </Wrapper>
     </Container>

@@ -57,11 +57,12 @@ export const Experience = () => {
           const year = element.date.split(".")[1];
           if (index === experience.length - 1) {
             return [
-              <Spot>
+              <Spot key={index}>
                 <Date>{day}</Date>
                 <Date>{year}</Date>
               </Spot>,
               <ExpTile
+                key={element.name}
                 index={index}
                 name={element.name}
                 dsc={element.dsc}
@@ -72,6 +73,7 @@ export const Experience = () => {
           } else {
             return [
               <ExpTile
+                key={element.name}
                 index={index}
                 name={element.name}
                 dsc={element.dsc}
@@ -79,7 +81,7 @@ export const Experience = () => {
                 video={element.video}
                 url={element.url}
               />,
-              <Spot>
+              <Spot key={index}>
                 <Date>{day}</Date>
                 <Date>{year}</Date>
               </Spot>,

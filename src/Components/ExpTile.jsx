@@ -51,7 +51,6 @@ const Button = styled.button`
   border: solid 1px #303030;
   border-radius: 5px;
   background-color: #5e5e5e;
-  color: #c6c6c6;
   font-weight: 500;
   letter-spacing: 1px;
   width: 60px;
@@ -59,6 +58,11 @@ const Button = styled.button`
     background-color: #005b60;
     cursor: pointer;
   }
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: #c6c6c6;
 `;
 
 export const ExpTile = ({ index, name, dsc, img, url }) => {
@@ -69,7 +73,9 @@ export const ExpTile = ({ index, name, dsc, img, url }) => {
             <Wrapper>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
-              <Button>more</Button>
+              <Button>
+                <Link href={url}>more</Link>
+              </Button>
             </Wrapper>,
             <Img src={img} />,
           ]
@@ -78,7 +84,9 @@ export const ExpTile = ({ index, name, dsc, img, url }) => {
             <Wrapper style={{ alignItems: "flex-end" }}>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
-              <Button>more</Button>
+              <Button>
+                <Link href={url}>more</Link>
+              </Button>
             </Wrapper>,
           ]}
       {}

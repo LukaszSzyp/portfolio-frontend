@@ -3,6 +3,7 @@ import { Navbar } from "./../../Components/Navbar";
 import { AboutMe } from "./../../Components/AboutMe";
 import { Skills } from "./../../Components/Skills";
 import { Experience } from "./../../Components/Experience";
+import { Footer } from "./../../Components/Footer";
 
 const Container = styled.div`
   margin: 0;
@@ -21,6 +22,7 @@ export const Main = () => {
       <AboutMe />
       <Experience />
       <Skills />
+      <Footer />
     </Container>
   );
 };

@@ -46,12 +46,12 @@ export const skills = [
   {
     name: "Material UI",
     img: mui,
-    level: 3,
+    level: 4,
   },
   {
     name: "TypeScript",
     img: ts,
-    level: 3,
+    level: 2,
   },
 ];
 

@@ -28,13 +28,23 @@ const Wrapper = styled.div`
 `;
 
 const Spot = styled.div`
-  width: 20px;
-  height: 20px;
-  background-color: #5b63b7;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #919191;
   border-radius: 50%;
   justify-self: center;
   grid-column: 2/3;
   margin: 9.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const Date = styled.h5`
+  color: #c6c6c6;
+  font-size: 1rem;
+  font-weight: 600;
 `;
 
 export const Experience = () => {
@@ -43,9 +53,14 @@ export const Experience = () => {
       <Title>EXPERIENCE</Title>
       <Wrapper>
         {experience.map((element, index) => {
+          const day = element.date.split(".")[0];
+          const year = element.date.split(".")[1];
           if (index === experience.length - 1) {
             return [
-              <Spot />,
+              <Spot>
+                <Date>{day}</Date>
+                <Date>{year}</Date>
+              </Spot>,
               <ExpTile
                 index={index}
                 name={element.name}
@@ -64,7 +79,10 @@ export const Experience = () => {
                 video={element.video}
                 url={element.url}
               />,
-              <Spot />,
+              <Spot>
+                <Date>{day}</Date>
+                <Date>{year}</Date>
+              </Spot>,
             ];
           }
         })}

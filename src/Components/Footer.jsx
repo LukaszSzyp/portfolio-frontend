@@ -36,19 +36,30 @@ const SocialIcon = styled.div`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: #00c9c8;
+`;
+
 export const Footer = () => {
   return (
     <Container>
       <Title>Contact</Title>
       <SocialContainer>
         <SocialIcon>
-          <FacebookIcon sx={{ fontSize: 40 }} />
+          <Link href="https://www.facebook.com/profile.php?id=100003394758433">
+            <FacebookIcon sx={{ fontSize: 40 }} />
+          </Link>
         </SocialIcon>
         <SocialIcon>
-          <LinkedInIcon sx={{ fontSize: 40 }} />
+          <Link href="https://www.linkedin.com/in/%C5%82ukasz-szypulewski/">
+            <LinkedInIcon sx={{ fontSize: 40 }} />
+          </Link>
         </SocialIcon>
         <SocialIcon>
-          <GitHubIcon sx={{ fontSize: 40 }} />
+          <Link href="https://github.com/LukaszSzyp">
+            <GitHubIcon sx={{ fontSize: 40 }} />
+          </Link>
         </SocialIcon>
       </SocialContainer>
     </Container>

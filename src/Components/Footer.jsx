@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Container = styled.div`
   height: 40vh;
@@ -43,7 +44,7 @@ const Link = styled.a`
 
 export const Footer = () => {
   return (
-    <Container>
+    <Container id="footer">
       <Title>Contact</Title>
       <SocialContainer>
         <SocialIcon>
@@ -59,6 +60,11 @@ export const Footer = () => {
         <SocialIcon>
           <Link href="https://github.com/LukaszSzyp">
             <GitHubIcon sx={{ fontSize: 40 }} />
+          </Link>
+        </SocialIcon>
+        <SocialIcon>
+          <Link href="mailto:lukasz.szypulewski@gmail.com ? subject = Feedback form CV & body = Hi Łukasz">
+            <EmailIcon sx={{ fontSize: 40 }} />
           </Link>
         </SocialIcon>
       </SocialContainer>

@@ -39,7 +39,7 @@ const Spot = styled.div`
 
 export const Experience = () => {
   return (
-    <Container>
+    <Container id="experience">
       <Title>EXPERIENCE</Title>
       <Wrapper>
         {experience.map((element, index) => {

@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
 export const Skills = () => {
   return (
-    <Container>
+    <Container id="skills">
       <Title>SKILLS</Title>
       <Wrapper>
         {skills.map((skill) => (

@@ -49,9 +49,13 @@ const Button = styled.button`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 export const AboutMe = () => {
   return (
-    <Container>
+    <Container id="aboutMe">
       <Img src={Face} />
       <Section>
         <Greeting>Hi there! My name is</Greeting>
@@ -61,7 +65,9 @@ export const AboutMe = () => {
           new things. Programming makes me happy so I'd like to share with you
           what I've done so far.
         </Text>
-        <Button>Say hi!</Button>
+        <Link href="#footer">
+          <Button>Say hi!</Button>
+        </Link>
       </Section>
     </Container>
   );

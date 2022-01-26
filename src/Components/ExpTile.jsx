@@ -73,9 +73,11 @@ export const ExpTile = ({ index, name, dsc, img, url }) => {
             <Wrapper>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
-              <Button>
-                <Link href={url}>more</Link>
-              </Button>
+              {url !== "" && (
+                <Button>
+                  <Link href={url}>more</Link>
+                </Button>
+              )}
             </Wrapper>,
             <Img src={img} />,
           ]

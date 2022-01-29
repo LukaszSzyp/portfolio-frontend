@@ -20,6 +20,9 @@ const Title = styled.h3`
   margin: 10px 30px;
   font-weight: 400;
   letter-spacing: 2px;
+  @media only screen and (max-width: 700px) {
+    margin: 10px 50px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -34,7 +37,7 @@ const Wrapper = styled.div`
     grid-template-rows: repeat(5, 25vh);
   }
   @media only screen and (max-width: 700px) {
-    grid-template-rows: repeat(5, 33vh);
+    grid-template-rows: repeat(5, 40vh);
   }
 `;
 

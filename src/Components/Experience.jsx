@@ -8,6 +8,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #000;
+  @media only screen and (max-width: 1000px) {
+    align-items: center;
+    width: 90vw;
+  }
 `;
 
 const Title = styled.h3`
@@ -25,6 +29,13 @@ const Wrapper = styled.div`
   row-gap: 10vh;
   grid-template-columns: 1fr 50px 1fr;
   grid-template-rows: repeat(5, 10vh);
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: repeat(5, 25vh);
+  }
+  @media only screen and (max-width: 700px) {
+    grid-template-rows: repeat(5, 100%);
+  }
 `;
 
 const Spot = styled.div`

@@ -61,7 +61,7 @@ export const experience = [
     name: "E-Commerce App layout",
     dsc: "Make layout with React and styled components",
     img: Ecommerce,
-    url: "",
+    url: "https://elegant-archimedes-d2ca24.netlify.app",
     gitUrl: "https://github.com/LukaszSzyp/E-Commerce-App",
     date: "1.2022",
   },

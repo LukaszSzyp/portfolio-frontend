@@ -66,7 +66,7 @@ export const AboutMe = () => {
           what I've done so far.
         </Text>
         <Link href="#footer">
-          <Button>Say hi!</Button>
+          <Button>Say Hi!</Button>
         </Link>
       </Section>
     </Container>

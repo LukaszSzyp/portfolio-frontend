@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Container = styled.div`
   height: 33vh;
@@ -45,10 +46,14 @@ const Dsc = styled.p`
   margin-top: 10px;
 `;
 
+const ButtonWrapper = styled.div`
+  display: flex;
+`;
+
 const Button = styled.button`
   margin-top: 20px;
   padding: 5px 10px;
-  border: solid 1px #303030;
+  border: none;
   border-radius: 5px;
   background-color: #5e5e5e;
   font-weight: 500;
@@ -58,6 +63,7 @@ const Button = styled.button`
     background-color: #005b60;
     cursor: pointer;
   }
+  margin-right: 10px;
 `;
 
 const Link = styled.a`
@@ -65,7 +71,7 @@ const Link = styled.a`
   color: #c6c6c6;
 `;
 
-export const ExpTile = ({ index, name, dsc, img, url }) => {
+export const ExpTile = ({ index, name, dsc, img, url, gitUrl }) => {
   return (
     <Container index={index}>
       {index % 2 === 0
@@ -73,11 +79,20 @@ export const ExpTile = ({ index, name, dsc, img, url }) => {
             <Wrapper>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
-              {url !== "" && (
-                <Button>
-                  <Link href={url}>more</Link>
-                </Button>
-              )}
+              <ButtonWrapper>
+                {url !== "" && (
+                  <Button>
+                    <Link href={url}>more</Link>
+                  </Button>
+                )}
+                {gitUrl !== "" && (
+                  <Button>
+                    <Link href={gitUrl}>
+                      <GitHubIcon />
+                    </Link>
+                  </Button>
+                )}
+              </ButtonWrapper>
             </Wrapper>,
             <Img src={img} />,
           ]
@@ -86,9 +101,20 @@ export const ExpTile = ({ index, name, dsc, img, url }) => {
             <Wrapper style={{ alignItems: "flex-end" }}>
               <Title>{name}</Title>
               <Dsc>{dsc}</Dsc>
-              <Button>
-                <Link href={url}>more</Link>
-              </Button>
+              <ButtonWrapper>
+                {url !== "" && (
+                  <Button>
+                    <Link href={url}>more</Link>
+                  </Button>
+                )}
+                {gitUrl !== "" && (
+                  <Button>
+                    <Link href={gitUrl}>
+                      <GitHubIcon />
+                    </Link>
+                  </Button>
+                )}
+              </ButtonWrapper>
             </Wrapper>,
           ]}
       {}

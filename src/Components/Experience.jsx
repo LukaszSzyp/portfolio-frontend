@@ -68,6 +68,7 @@ export const Experience = () => {
                 dsc={element.dsc}
                 img={element.img}
                 url={element.url}
+                gitUrl={element.gitUrl}
               />,
             ];
           } else {
@@ -80,6 +81,7 @@ export const Experience = () => {
                 img={element.img}
                 video={element.video}
                 url={element.url}
+                gitUrl={element.gitUrl}
               />,
               <Spot key={index}>
                 <Date>{day}</Date>

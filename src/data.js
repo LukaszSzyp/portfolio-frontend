@@ -11,6 +11,7 @@ import weather from "./Assets/Images/Weather.jpg";
 import cncCentrum from "./Assets/Images/cncCentrum.jpg";
 import GoKu from "./Assets/Images/GoKu.jpg";
 import EcoFriendly from "./Assets/Images/EcoFriendly.jpg";
+import Ecommerce from "./Assets/Images/E-commerce.jpg";
 
 export const skills = [
   {
@@ -57,10 +58,11 @@ export const skills = [
 
 export const experience = [
   {
-    name: "currently Mill Store",
-    dsc: "Store for flour producing mill ",
-    img: "https://images.unsplash.com/photo-1612682869364-ba215014ae5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    name: "E-Commerce App layout",
+    dsc: "Make layout with React and styled components",
+    img: Ecommerce,
     url: "",
+    gitUrl: "https://github.com/LukaszSzyp/E-Commerce-App",
     date: "1.2022",
   },
   {
@@ -68,6 +70,7 @@ export const experience = [
     dsc: "Project carried out by 4 people team: the 'habit tracker' application that tracks the progress of pro-ecological behavior. During this project we worked in scrum methodology",
     img: EcoFriendly,
     url: "https://optimistic-morse-49151e.netlify.app/",
+    gitUrl: "https://github.com/infoshareacademy/jfdzr4-reaktorzy",
     date: "11.2021",
   },
   {
@@ -75,6 +78,7 @@ export const experience = [
     dsc: "Game using CSS, Js, Canvas. To move use arrow, shooting is 's' ",
     img: GoKu,
     url: "https://eager-pike-babae3.netlify.app",
+    gitUrl: "https://github.com/LukaszSzyp/DragonBall-GAME",
     date: "9.2021",
   },
   {
@@ -82,6 +86,7 @@ export const experience = [
     dsc: "Cloning UI from CNC store using only CSS. Source https://sklep.centrum-cnc.pl/19-prowadnice-i-wozki-liniowe-hiwin",
     img: cncCentrum,
     url: "https://kind-feynman-702a06.netlify.app",
+    gitUrl: "https://github.com/LukaszSzyp/CNC-centrum",
     date: "9.2021",
   },
   {
@@ -89,6 +94,7 @@ export const experience = [
     dsc: "App using REST API meteorological portal check current weather conditions in position load from browser",
     img: weather,
     url: "https://pedantic-khorana-a34ad7.netlify.app",
+    gitUrl: "https://github.com/LukaszSzyp/weather-api",
     date: "3.2021",
   },
   {
@@ -96,6 +102,7 @@ export const experience = [
     dsc: "My first app in vanilla js ",
     img: hangMan,
     url: "https://wonderful-fermat-5d9205.netlify.app",
+    gitUrl: "https://github.com/LukaszSzyp/hangman",
     date: "3.2021",
   },
 ];

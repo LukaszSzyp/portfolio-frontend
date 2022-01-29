@@ -82,7 +82,7 @@ export const ExpTile = ({ index, name, dsc, img, url, gitUrl }) => {
               <ButtonWrapper>
                 {url !== "" && (
                   <Button>
-                    <Link href={url}>more</Link>
+                    <Link href={url}>TRY IT</Link>
                   </Button>
                 )}
                 {gitUrl !== "" && (
@@ -104,7 +104,7 @@ export const ExpTile = ({ index, name, dsc, img, url, gitUrl }) => {
               <ButtonWrapper>
                 {url !== "" && (
                   <Button>
-                    <Link href={url}>more</Link>
+                    <Link href={url}>TRY IT</Link>
                   </Button>
                 )}
                 {gitUrl !== "" && (

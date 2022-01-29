@@ -6,29 +6,44 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const Img = styled.img`
-  width: 30rem;
-  height: 30rem;
+  width: min(50vw, 30rem);
+  height: min(50vw, 30rem);
   opacity: 0.7;
 `;
 const Section = styled.section`
-  width: 40%;
   padding: 15px;
+  width: max(30vw);
+  @media only screen and (max-width: 650px) {
+    width: max(90vw);
+  }
 `;
 const Greeting = styled.h4`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   font-weight: 300;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 2rem;
   color: #00adad;
+  @media only screen and (max-width: 650px) {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 `;
 const Text = styled.p`
   line-height: 1.5;

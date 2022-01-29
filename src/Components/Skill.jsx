@@ -11,6 +11,9 @@ const Container = styled.div`
 const Name = styled.h4`
   color: #c6c6c6;
   font-size: 1.2rem;
+  @media only screen and (max-width: 730px) {
+    font-size: 1rem;
+  }
 `;
 const Level = styled.div`
   width: ${(props) => props.level * 20}px;

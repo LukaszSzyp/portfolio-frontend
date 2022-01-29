@@ -9,6 +9,15 @@ const Container = styled.div`
   grid-column: ${(props) => (!(props.index % 2) ? 1 : 3)} /
     ${(props) => (!(props.index % 2) ? 2 : 4)};
   justify-content: space-around;
+  @media only screen and (max-width: 1000px) {
+    grid-row: ${(props) => props.index + 1} / ${(props) => props.index + 2};
+    grid-column: 1/2;
+  }
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
 `;
 
 const Img = styled.img`
@@ -22,6 +31,14 @@ const Img = styled.img`
     transform: scale(1.7, 1.7);
     z-index: 2;
   }
+  @media only screen and (max-width: 700px) {
+    width: 95%;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2, 1.2);
+      z-index: 2;
+    }
+  }
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -29,6 +46,9 @@ const Wrapper = styled.div`
   padding: 10px;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 700px) {
+    width: 95%;
+  }
 `;
 
 const Title = styled.h4`

@@ -6,24 +6,34 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
   height: 10vh;
   background-color: #000;
   z-index: 3;
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+  }
 `;
 
 const Logo = styled.h1`
-  margin-left: 25px;
   color: #ababab;
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 300;
+
+  @media only screen and (max-width: 340px) {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-right: 25px;
+  @media only screen and (max-width: 340px) {
+    flex-direction: column;
+    margin-top: 5px;
+  }
 `;
 
 const Button = styled.a`

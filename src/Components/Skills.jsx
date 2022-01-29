@@ -23,6 +23,12 @@ const Wrapper = styled.div`
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: 60px;
+  @media only screen and (max-width: 620px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Skills = () => {

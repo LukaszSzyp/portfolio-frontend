@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     grid-template-rows: repeat(5, 25vh);
   }
   @media only screen and (max-width: 700px) {
-    grid-template-rows: repeat(5, 100%);
+    grid-template-rows: repeat(5, 33vh);
   }
 `;
 

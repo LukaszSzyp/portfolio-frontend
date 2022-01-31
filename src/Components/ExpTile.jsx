@@ -75,10 +75,11 @@ const Button = styled.button`
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #5e5e5e;
+  background-color: #111111;
   font-weight: 500;
   letter-spacing: 1px;
   width: 80px;
+  opacity: 0.7;
   &:hover {
     background-color: #005b60;
     cursor: pointer;

@@ -6,12 +6,15 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90vw;
+  width: 100%;
   height: 10vh;
   background-color: #000;
-  z-index: 3;
+  z-index: 99;
   @media only screen and (max-width: 650px) {
     flex-direction: column;
+  }
+  @media only screen and (max-width: 340px) {
+    height: 16vh;
   }
 `;
 
@@ -20,6 +23,7 @@ const Logo = styled.h1`
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 300;
+  margin-left: 20px;
 
   @media only screen and (max-width: 340px) {
     text-align: center;
@@ -29,6 +33,7 @@ const Logo = styled.h1`
 
 const Wrapper = styled.div`
   display: flex;
+  margin-right: 20px;
   justify-content: space-between;
   @media only screen and (max-width: 340px) {
     flex-direction: column;
@@ -46,6 +51,7 @@ const Button = styled.a`
   &:hover {
     color: #9296f0;
   }
+  transition: color 0.2s linear;
 `;
 
 export const Navbar = () => {

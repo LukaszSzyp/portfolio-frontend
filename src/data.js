@@ -35,11 +35,6 @@ export const skills = [
     level: 4,
   },
   {
-    name: "Redux",
-    img: redux,
-    level: 2,
-  },
-  {
     name: "Rest API",
     img: rest,
     level: 5,
@@ -48,6 +43,14 @@ export const skills = [
     name: "Material UI",
     img: mui,
     level: 4,
+  },
+];
+
+export const skillsDev = [
+  {
+    name: "Redux",
+    img: redux,
+    level: 2,
   },
   {
     name: "TypeScript",

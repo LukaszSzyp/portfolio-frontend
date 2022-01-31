@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 100px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,16 +9,13 @@ const Container = styled.div`
 `;
 
 const Name = styled.h4`
-  color: #c6c6c6;
+  color: white;
+  text-align: center;
   font-size: 1.2rem;
+  letter-spacing: 2px;
   @media only screen and (max-width: 730px) {
     font-size: 1rem;
   }
-`;
-const Level = styled.div`
-  width: ${(props) => props.level * 20}px;
-  margin-left: 10px;
-  border-bottom: 10px dotted #00adad;
 `;
 
 const Img = styled.img`
@@ -38,7 +35,6 @@ export const Skill = ({ skill }) => {
     <Container>
       <Wrapper>
         <Name>{skill.name}</Name>
-        <Level level={skill.level} />
       </Wrapper>
       <Img src={skill.img} />
     </Container>

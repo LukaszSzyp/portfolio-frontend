@@ -3,14 +3,17 @@ import { experience } from "../data";
 import { ExpTile } from "./ExpTile";
 
 const Container = styled.div`
-  margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   background-color: #000;
+  padding-top: 10vh;
   @media only screen and (max-width: 1000px) {
     align-items: center;
     width: 90vw;
+  }
+  @media only screen and (max-width: 340px) {
+    padding-top: 16vh;
   }
 `;
 

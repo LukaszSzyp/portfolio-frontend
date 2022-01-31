@@ -51,6 +51,7 @@ const Button = styled.a`
   &:hover {
     color: #9296f0;
   }
+  transition: color 0.2s linear;
 `;
 
 export const Navbar = () => {

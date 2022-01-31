@@ -80,6 +80,7 @@ const Button = styled.button`
   letter-spacing: 1px;
   width: 80px;
   opacity: 0.7;
+  transition: background-color 0.1s linear;
   &:hover {
     background-color: #005b60;
     cursor: pointer;
